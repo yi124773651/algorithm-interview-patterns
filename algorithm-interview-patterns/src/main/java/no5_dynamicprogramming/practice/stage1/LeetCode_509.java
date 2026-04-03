@@ -17,8 +17,23 @@ public class LeetCode_509 {
         System.out.println(dp(4)); // 3
     }
 
+    /**
+     * 1.定义状态：dp[i] 是 斐波那契数 F(n)
+     * 2.状态转移方程： dp[i] = dp[i-1] + dp[i-2]  i> 1
+     * 3.初始条件：dp[0] = 0 dp[1]=1
+     * 4.遍历顺序 从小到大
+     *
+     * @param n
+     * @return
+     */
     public static int dp(int n) {
-        // TODO
-        return -1;
+        if (n <= 1) return n;
+        int[] dp = new int[n + 1];//n+1数组大小
+        dp[0] = 0;
+        dp[1] = 1;
+        for (int i = 2; i < n + 1; i++) {   //条件n+1
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+        return dp[n];
     }
 }
