@@ -1,0 +1,38 @@
+﻿<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#4f46e5"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <rect x="40" y="36" width="1120" height="648" rx="32" fill="#ffffff" stroke="#c7d2fe"/>
+  <text x="90" y="100" font-size="34" font-weight="700" fill="#3730a3">二分搜索</text>
+  <text x="90" y="140" font-size="20" fill="#4338ca">像在单调答案空间里不断对半切开，逼近那条关键边界</text>
+  <g transform="translate(120,250)">
+    <line x1="40" y1="240" x2="980" y2="240" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+    <rect x="120" y="180" width="720" height="70" rx="18" fill="#e0e7ff"/>
+    <rect x="120" y="180" width="360" height="70" rx="18" fill="#c7d2fe"/>
+    <rect x="120" y="180" width="540" height="70" rx="18" fill="#a5b4fc" fill-opacity="0.55"/>
+    <line x1="480" y1="130" x2="480" y2="280" stroke="#4f46e5" stroke-width="6"/>
+    <text x="480" y="116" text-anchor="middle" font-size="24" font-weight="700" fill="#3730a3">mid</text>
+    <line x1="120" y1="320" x2="480" y2="320" stroke="#4f46e5" stroke-width="6" marker-end="url(#arrow)"/>
+    <line x1="840" y1="320" x2="480" y2="320" stroke="#4f46e5" stroke-width="6" marker-end="url(#arrow)"/>
+    <text x="120" y="360" font-size="24" fill="#3730a3">左边界</text>
+    <text x="760" y="360" font-size="24" fill="#3730a3">右边界</text>
+    <g font-size="22" font-weight="700" fill="#0f172a">
+      <text x="170" y="225">可行</text>
+      <text x="570" y="225">临界</text>
+      <text x="730" y="225">不可行</text>
+    </g>
+    <text x="260" y="80" font-size="28" font-weight="700" fill="#4338ca">问题不是找数，而是找边界</text>
+  </g>
+  <g transform="translate(90,610)">
+    <rect x="0" y="0" width="150" height="46" rx="23" fill="#e0e7ff"/><text x="75" y="30" text-anchor="middle" font-size="20" fill="#4338ca">单调空间</text>
+    <rect x="170" y="0" width="150" height="46" rx="23" fill="#c7d2fe"/><text x="245" y="30" text-anchor="middle" font-size="20" fill="#3730a3">判定函数</text>
+    <rect x="340" y="0" width="150" height="46" rx="23" fill="#eef2ff"/><text x="415" y="30" text-anchor="middle" font-size="20" fill="#312e81">逼近边界</text>
+  </g>
+</svg>

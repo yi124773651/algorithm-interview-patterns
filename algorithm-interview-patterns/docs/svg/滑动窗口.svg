@@ -1,0 +1,57 @@
+﻿<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef6ff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <rect x="40" y="36" width="1120" height="648" rx="32" fill="url(#card)" stroke="#cbd5e1"/>
+  <text x="90" y="100" font-size="34" font-weight="700" fill="#0f172a">滑动窗口</text>
+  <text x="90" y="140" font-size="20" fill="#475569">像一个可伸缩的透明盒子，在连续区间上向前滑行</text>
+  <g transform="translate(120,240)">
+    <rect x="0" y="70" width="90" height="90" rx="18" fill="#e2e8f0"/>
+    <rect x="100" y="70" width="90" height="90" rx="18" fill="#e2e8f0"/>
+    <rect x="200" y="70" width="90" height="90" rx="18" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="300" y="70" width="90" height="90" rx="18" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="400" y="70" width="90" height="90" rx="18" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="500" y="70" width="90" height="90" rx="18" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="600" y="70" width="90" height="90" rx="18" fill="#e2e8f0"/>
+    <rect x="700" y="70" width="90" height="90" rx="18" fill="#e2e8f0"/>
+    <g font-size="34" font-weight="700" text-anchor="middle" fill="#0f172a">
+      <text x="45" y="128">2</text><text x="145" y="128">1</text><text x="245" y="128">3</text><text x="345" y="128">2</text>
+      <text x="445" y="128">5</text><text x="545" y="128">1</text><text x="645" y="128">4</text><text x="745" y="128">2</text>
+    </g>
+    <rect x="185" y="42" width="425" height="146" rx="28" fill="#dbeafe" fill-opacity="0.25" stroke="#2563eb" stroke-width="5" stroke-dasharray="14 10"/>
+    <line x1="185" y1="26" x2="185" y2="206" stroke="#dc2626" stroke-width="5"/>
+    <line x1="610" y1="26" x2="610" y2="206" stroke="#2563eb" stroke-width="5"/>
+    <text x="185" y="8" text-anchor="middle" font-size="20" font-weight="700" fill="#dc2626">左边界</text>
+    <text x="610" y="8" text-anchor="middle" font-size="20" font-weight="700" fill="#2563eb">右边界</text>
+    <line x1="650" y1="240" x2="760" y2="240" stroke="#2563eb" stroke-width="5" marker-end="url(#arrowBlue)"/>
+    <text x="770" y="246" font-size="22" fill="#2563eb">装入新元素</text>
+    <line x1="150" y1="240" x2="70" y2="240" stroke="#dc2626" stroke-width="5" marker-end="url(#arrowRed)"/>
+    <text x="-10" y="246" font-size="22" fill="#dc2626">不合法时移出旧元素</text>
+  </g>
+  <g transform="translate(830,220)">
+    <rect x="0" y="0" width="250" height="210" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="125" y="42" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">窗口内部状态</text>
+    <text x="24" y="86" font-size="22" fill="#334155">• 元素频次</text>
+    <text x="24" y="122" font-size="22" fill="#334155">• 当前和 / 长度</text>
+    <text x="24" y="158" font-size="22" fill="#334155">• 条件是否满足</text>
+  </g>
+  <g transform="translate(90,610)">
+    <rect x="0" y="0" width="150" height="46" rx="23" fill="#dbeafe"/><text x="75" y="30" text-anchor="middle" font-size="20" fill="#1d4ed8">连续区间</text>
+    <rect x="170" y="0" width="150" height="46" rx="23" fill="#fee2e2"/><text x="245" y="30" text-anchor="middle" font-size="20" fill="#b91c1c">伸缩边界</text>
+    <rect x="340" y="0" width="150" height="46" rx="23" fill="#dcfce7"/><text x="415" y="30" text-anchor="middle" font-size="20" fill="#15803d">维护状态</text>
+  </g>
+</svg>

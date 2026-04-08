@@ -1,0 +1,50 @@
+﻿<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#0284c7"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <rect x="40" y="36" width="1120" height="648" rx="32" fill="#ffffff" stroke="#bae6fd"/>
+  <text x="90" y="100" font-size="34" font-weight="700" fill="#075985">拓扑排序</text>
+  <text x="90" y="140" font-size="20" fill="#0369a1">像一串带锁的任务关卡，只有前置依赖清空，下一层才会亮起</text>
+  <g transform="translate(120,200)">
+    <rect x="80" y="80" width="140" height="80" rx="20" fill="#dbeafe" stroke="#0284c7" stroke-width="4"/>
+    <rect x="340" y="80" width="140" height="80" rx="20" fill="#e0f2fe" stroke="#0284c7" stroke-width="4"/>
+    <rect x="340" y="250" width="140" height="80" rx="20" fill="#e0f2fe" stroke="#0284c7" stroke-width="4"/>
+    <rect x="620" y="80" width="140" height="80" rx="20" fill="#cffafe" stroke="#0284c7" stroke-width="4"/>
+    <rect x="620" y="250" width="140" height="80" rx="20" fill="#cffafe" stroke="#0284c7" stroke-width="4"/>
+    <rect x="900" y="165" width="140" height="80" rx="20" fill="#a5f3fc" stroke="#0891b2" stroke-width="4"/>
+    <g font-size="26" font-weight="700" text-anchor="middle" fill="#0c4a6e">
+      <text x="150" y="128">A</text><text x="410" y="128">B</text><text x="410" y="298">C</text><text x="690" y="128">D</text><text x="690" y="298">E</text><text x="970" y="213">F</text>
+    </g>
+    <line x1="220" y1="120" x2="340" y2="120" stroke="#0284c7" stroke-width="6" marker-end="url(#arrow)"/>
+    <line x1="220" y1="120" x2="340" y2="290" stroke="#0284c7" stroke-width="6" marker-end="url(#arrow)"/>
+    <line x1="480" y1="120" x2="620" y2="120" stroke="#0284c7" stroke-width="6" marker-end="url(#arrow)"/>
+    <line x1="480" y1="290" x2="620" y2="290" stroke="#0284c7" stroke-width="6" marker-end="url(#arrow)"/>
+    <line x1="760" y1="120" x2="900" y2="205" stroke="#0284c7" stroke-width="6" marker-end="url(#arrow)"/>
+    <line x1="760" y1="290" x2="900" y2="205" stroke="#0284c7" stroke-width="6" marker-end="url(#arrow)"/>
+    <circle cx="150" cy="58" r="18" fill="#16a34a"/>
+    <text x="150" y="65" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">0</text>
+    <circle cx="410" cy="58" r="18" fill="#f59e0b"/>
+    <text x="410" y="65" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">1</text>
+    <circle cx="410" cy="228" r="18" fill="#f59e0b"/>
+    <text x="410" y="235" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">1</text>
+    <circle cx="690" cy="58" r="18" fill="#f59e0b"/>
+    <text x="690" y="65" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">1</text>
+    <circle cx="690" cy="228" r="18" fill="#f59e0b"/>
+    <text x="690" y="235" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">1</text>
+    <circle cx="970" cy="143" r="18" fill="#ef4444"/>
+    <text x="970" y="150" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">2</text>
+    <text x="180" y="400" font-size="28" font-weight="700" fill="#075985">入度归零，任务解锁，按层推进</text>
+  </g>
+  <g transform="translate(90,610)">
+    <rect x="0" y="0" width="150" height="46" rx="23" fill="#dbeafe"/><text x="75" y="30" text-anchor="middle" font-size="20" fill="#0369a1">依赖关系</text>
+    <rect x="170" y="0" width="150" height="46" rx="23" fill="#cffafe"/><text x="245" y="30" text-anchor="middle" font-size="20" fill="#0f766e">入度归零</text>
+    <rect x="340" y="0" width="150" height="46" rx="23" fill="#fef3c7"/><text x="415" y="30" text-anchor="middle" font-size="20" fill="#a16207">逐层解锁</text>
+  </g>
+</svg>

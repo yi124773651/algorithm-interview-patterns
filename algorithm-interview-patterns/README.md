@@ -1,7 +1,7 @@
 ﻿# Algorithm Interview Patterns
 
 一个面向面试与刷题训练的算法模式仓库。  
-目标不是只记住题目答案，而是建立**“看到题目 -> 识别结构 -> 选择方法 -> 写出稳定模板”** 的思维链路。
+目标不是只记住题目答案，而是建立 **“看到题目 -> 识别结构 -> 选择方法 -> 写出稳定模板”** 的思维链路。
 
 ---
 
@@ -126,6 +126,8 @@ practice
 
 **目录位置：** `src/main/java/no1_slidingwindow`
 
+![滑动窗口心理表征](docs/svg/滑动窗口.svg)
+
 ### 基本思路
 
 滑动窗口适合处理**连续子数组 / 子串**问题。  
@@ -158,6 +160,8 @@ practice
 ## 2. 双指针
 
 **目录位置：** `src/main/java/no2_twopointertechnique`
+
+![双指针心理表征](docs/svg/双指针.svg)
 
 ### 基本思路
 
@@ -192,6 +196,8 @@ practice
 
 **目录位置：** `src/main/java/no3_bfs`
 
+![BFS 心理表征](docs/svg/BFS.svg)
+
 ### 基本思路
 
 BFS 按层扩散，天然适合无权图最短路和最少步数问题。
@@ -221,6 +227,8 @@ BFS 按层扩散，天然适合无权图最短路和最少步数问题。
 ## 4. DFS / 回溯
 
 **目录位置：** `src/main/java/no4_dfsbacktracking`
+
+![DFS 回溯心理表征](docs/svg/DFS-回溯.svg)
 
 ### 基本思路
 
@@ -256,6 +264,8 @@ DFS 是深度搜索，回溯是带“做选择 / 撤销选择”的 DFS。
 
 **目录位置：** `src/main/java/no5_dynamicprogramming`
 
+![动态规划心理表征](docs/svg/动态规划.svg)
+
 ### 基本思路
 
 动态规划的核心是：  
@@ -289,6 +299,8 @@ DFS 是深度搜索，回溯是带“做选择 / 撤销选择”的 DFS。
 
 **目录位置：** `src/main/java/no6_greedy`
 
+![贪心心理表征](docs/svg/贪心.svg)
+
 ### 基本思路
 
 每一步都做当前最优的局部选择，并希望导向全局最优。
@@ -316,6 +328,8 @@ DFS 是深度搜索，回溯是带“做选择 / 撤销选择”的 DFS。
 ## 7. 二分搜索
 
 **目录位置：** `src/main/java/no7_binarysearch`
+
+![二分搜索心理表征](docs/svg/二分搜索.svg)
 
 ### 基本思路
 
@@ -347,6 +361,8 @@ DFS 是深度搜索，回溯是带“做选择 / 撤销选择”的 DFS。
 ## 8. 栈 / 单调栈
 
 **目录位置：** `src/main/java/no8_stack`
+
+![栈单调栈心理表征](docs/svg/栈-单调栈.svg)
 
 ### 基本思路
 
@@ -380,6 +396,8 @@ DFS 是深度搜索，回溯是带“做选择 / 撤销选择”的 DFS。
 
 **目录位置：** `src/main/java/no9_prefixsum`
 
+![前缀和心理表征](docs/svg/前缀和.svg)
+
 ### 基本思路
 
 前缀和用于快速求解区间累计信息。
@@ -406,6 +424,8 @@ DFS 是深度搜索，回溯是带“做选择 / 撤销选择”的 DFS。
 ## 10. 并查集
 
 **目录位置：** `src/main/java/no10_unionfind`
+
+![并查集心理表征](docs/svg/并查集.svg)
 
 ### 基本思路
 
@@ -434,6 +454,8 @@ DFS 是深度搜索，回溯是带“做选择 / 撤销选择”的 DFS。
 ## 11. 拓扑排序
 
 **目录位置：** `src/main/java/no11_topologicalsort`
+
+![拓扑排序心理表征](docs/svg/拓扑排序.svg)
 
 ### 基本思路
 

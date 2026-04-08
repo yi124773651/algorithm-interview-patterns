@@ -1,0 +1,39 @@
+﻿<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#fffaf5"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <rect x="40" y="36" width="1120" height="648" rx="32" fill="#ffffff" stroke="#fed7aa"/>
+  <text x="90" y="100" font-size="34" font-weight="700" fill="#7c2d12">双指针</text>
+  <text x="90" y="140" font-size="20" fill="#9a3412">像两只手同时操作一条珠链，彼此配合缩小搜索空间</text>
+  <g transform="translate(110,250)">
+    <line x1="90" y1="120" x2="860" y2="120" stroke="#cbd5e1" stroke-width="12" stroke-linecap="round"/>
+    <g fill="#fdba74" stroke="#ea580c" stroke-width="2">
+      <circle cx="120" cy="120" r="28"/><circle cx="210" cy="120" r="28"/><circle cx="300" cy="120" r="28"/>
+      <circle cx="390" cy="120" r="28"/><circle cx="480" cy="120" r="28"/><circle cx="570" cy="120" r="28"/>
+      <circle cx="660" cy="120" r="28"/><circle cx="750" cy="120" r="28"/><circle cx="840" cy="120" r="28"/>
+    </g>
+    <g font-size="24" font-weight="700" text-anchor="middle" fill="#7c2d12">
+      <text x="120" y="128">1</text><text x="210" y="128">2</text><text x="300" y="128">3</text><text x="390" y="128">4</text>
+      <text x="480" y="128">5</text><text x="570" y="128">6</text><text x="660" y="128">7</text><text x="750" y="128">8</text><text x="840" y="128">9</text>
+    </g>
+    <path d="M30 30 C90 -10, 130 10, 160 60 C190 110, 170 160, 110 170 C50 180, 10 140, 20 90 C24 65, 28 46, 30 30 Z" fill="#fde68a" stroke="#f59e0b" stroke-width="4"/>
+    <path d="M930 30 C870 -10, 830 10, 800 60 C770 110, 790 160, 850 170 C910 180, 950 140, 940 90 C936 65, 932 46, 930 30 Z" fill="#fde68a" stroke="#f59e0b" stroke-width="4"/>
+    <line x1="150" y1="210" x2="330" y2="210" stroke="#ea580c" stroke-width="5" marker-end="url(#arrow)"/>
+    <line x1="810" y1="210" x2="630" y2="210" stroke="#ea580c" stroke-width="5" marker-end="url(#arrow)"/>
+    <text x="160" y="250" font-size="22" fill="#9a3412">左指针前进</text>
+    <text x="670" y="250" font-size="22" fill="#9a3412">右指针配合移动</text>
+    <text x="390" y="330" font-size="28" font-weight="700" fill="#7c2d12">左右夹逼 / 快慢追逐 / 同向扫描</text>
+  </g>
+  <g transform="translate(90,610)">
+    <rect x="0" y="0" width="150" height="46" rx="23" fill="#ffedd5"/><text x="75" y="30" text-anchor="middle" font-size="20" fill="#c2410c">协同移动</text>
+    <rect x="170" y="0" width="150" height="46" rx="23" fill="#fde68a"/><text x="245" y="30" text-anchor="middle" font-size="20" fill="#92400e">缩小空间</text>
+    <rect x="340" y="0" width="150" height="46" rx="23" fill="#fed7aa"/><text x="415" y="30" text-anchor="middle" font-size="20" fill="#9a3412">位置关系</text>
+  </g>
+</svg>
