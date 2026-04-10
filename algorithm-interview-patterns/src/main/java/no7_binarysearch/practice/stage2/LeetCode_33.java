@@ -136,13 +136,13 @@ public class LeetCode_33 {
                 return mid;
             }
 
-            if (nums[low] <= nums[mid]) {  //右半边有序
+            if (nums[low] <= nums[mid]) {  //左半边有序
                 if (nums[low] <= target && target < nums[mid]) {
                     high = mid - 1;
                 } else {
                     low = mid + 1;
                 }
-            } else {//左半边有序
+            } else {//右半边有序
                 if (nums[mid] < target && target <= nums[high]) {
                     low = mid + 1;
                 } else {
